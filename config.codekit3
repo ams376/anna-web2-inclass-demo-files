@@ -7,7 +7,7 @@
       "uuidString" : "301077FD-6587-4DAE-808A-231B715466F3"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34018",
   "files" : {
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -542,7 +542,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 638898965.76008201,
-    "displayValue" : "Web-2-InClass-JG",
+    "displayValue" : "Web-2-InClass-JG-week-4-css-grid-tablet-desktop",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-koamaru",
     "iconImageWasSetByUser" : 0
@@ -2598,9 +2598,6 @@
       "removeVariables" : 0,
       "safelistEntries" : [
 
-      ],
-      "skippedEntries" : [
-        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -2635,7 +2632,6 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
-    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,

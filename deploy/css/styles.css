@@ -390,11 +390,35 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+}
+@media (min-width: 1200px) {
+  header {
+    grid-template-areas: ". header .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 1200px) {
+  header > div {
+    grid-area: header;
+  }
+}
 header > div section {
   padding: 15px;
 }
 header > div section img {
   width: 96px;
+}
+@media (min-width: 768px) {
+  header > div section img {
+    width: 123px;
+  }
+}
+@media (min-width: 1024px) {
+  header > div section img {
+    width: 150px;
+  }
 }
 
 /* =============
