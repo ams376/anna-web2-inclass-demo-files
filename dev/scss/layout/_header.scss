@@ -11,23 +11,42 @@ header {
     >div {
         display: grid;
         grid-template-areas: 
-        "logo burger"
+        "burger survival"
         "nav nav";
         grid-template-columns: 20% auto;
 
         @include lg {
-            grid-template-areas: "logo nav";
+            grid-template-areas: "nav survival";
             grid-template-columns: 20% auto;
         }
 
-        #logo-container {
-            grid-area: logo;
+        #button-container {
+            grid-area: survival;
             padding: 10px;
+            text-align: right;
+
+           button {
+                background-color: $yellow;
+                border-radius: 23px;
+                color: $black;
+                display: inline-block;
+                font-size: rem-calc(18);
+                font-weight: 700;
+                padding: 10px 20px;
+                border: none;
+                transition: 0.25s;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+
+            
         }
 
         #burger-container {
             align-items: center;
-            justify-content: flex-end;
             display: flex;
             grid-area: burger;
             padding: 10px;

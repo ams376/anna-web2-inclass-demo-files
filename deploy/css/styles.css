@@ -407,12 +407,10 @@ textarea {
 @media (min-width: 1024px) {
   #nav-container ul {
     display: flex;
-    justify-content: flex-end;
   }
 }
 #nav-container ul li {
   margin-bottom: 20px;
-  text-align: right;
 }
 @media (min-width: 1024px) {
   #nav-container ul li {
@@ -441,6 +439,15 @@ textarea {
 #nav-container ul li a:visited:active {
   color: #F8C832;
 }
+#nav-container ul li:first-child {
+  border: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  #nav-container ul li:first-child {
+    display: list-item;
+  }
+}
 #nav-container ul li:last-child {
   border: none;
 }
@@ -457,22 +464,37 @@ header {
 }
 header > div {
   display: grid;
-  grid-template-areas: "logo burger" "nav nav";
+  grid-template-areas: "burger survival" "nav nav";
   grid-template-columns: 20% auto;
 }
 @media (min-width: 1024px) {
   header > div {
-    grid-template-areas: "logo nav";
+    grid-template-areas: "nav survival";
     grid-template-columns: 20% auto;
   }
 }
-header > div #logo-container {
-  grid-area: logo;
+header > div #button-container {
+  grid-area: survival;
   padding: 10px;
+  text-align: right;
+}
+header > div #button-container button {
+  background-color: #F8C832;
+  border-radius: 23px;
+  color: #000;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.25s;
+}
+header > div #button-container button:hover {
+  background-color: #000;
+  color: #fff;
 }
 header > div #burger-container {
   align-items: center;
-  justify-content: flex-end;
   display: flex;
   grid-area: burger;
   padding: 10px;
